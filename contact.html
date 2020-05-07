@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> INF250 News </title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="shadow">INF250 News </h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="sports.html">Sports</a></li>
+                <li><a href="weather.html">Weather</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </header>
+        <form class="grid-container" action="https://rest-api-ex.herokuapp.com/all" method="post">
+            <div class="grid-item left-column">
+                <label for="name">Name:</label> 
+            </div>
+            <div class="grid-item">
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="grid-item left-column">
+                <label for="email">E-mail:</label> 
+            </div>
+            <div class="grid-item">
+                <input type="email" name="email" id="email" autofocus required>
+            </div>           
+            <div class="grid-item left-column">
+                <label for="message">Message:</label> 
+            </div>
+            <div class="grid-item">
+                <input type="text" name="message" id="message" required>
+            </div>        
+            <div class="grid-item left-column left-button">
+                <input class="button blue" type="submit" id="submit" value="Submit">
+            </div>
+            <div class="grid-item right-button">
+                <input class="button red" type="reset" id="reset" value="Reset">
+            </div>
+    </form>
+</body>
+    <footer>
+        <p>&copy; 2020 - Garrett Williams</p>
+    </footer>
+    </html>
